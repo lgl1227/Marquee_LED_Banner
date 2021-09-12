@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="25dp"
+    android:layout_height="24dp"
+    <!-- 定义一组单选按钮 -->
+    <!-- checkableBehavior的可选值由三个：single设置为单选，all为多选，none为普通选项 -->
+    <group android:checkableBehavior="none">
+
+        <item android:id="@+id/color" android:title="颜色效果">
+            <menu>
+                <group android:checkableBehavior = "none">
+                    <item android:id="@+id/blue"
+                        android:title="蓝色" />
+                    <item android:id="@+id/green"
+                        android:title="绿色" />
+                    <item android:id="@+id/red"
+                        android:title="红色" />
+                    <item android:id="@+id/yellow"
+                        android:title="黄色" />
+                    <item android:id="@+id/gray"
+                        android:title="灰色" />
+                    <item android:id="@+id/cyan"
+                        android:title="蓝绿色" />
+                    <item android:id="@+id/black"
+                        android:title="黑色" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:id="@+id/size" android:title="字体大小">
+            <menu>
+                <group android:checkableBehavior = "none">
+                    <item android:id="@+id/biger"
+                        android:title="变大" />
+                    <item android:id="@+id/smaller"
+                        android:title="变小" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:id="@+id/speed" android:title="滚动速度">
+            <menu>
+                <group android:checkableBehavior = "none">
+                    <item android:id="@+id/quick"
+                        android:title="加快" />
+                    <item android:id="@+id/low"
+                        android:title="减慢" />
+                </group>
+            </menu>
+        </item>
+
+
+
+    </group>
+</menu>
